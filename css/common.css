@@ -1,0 +1,288 @@
+@charset "utf-8";
+@font-face {
+    font-family: "LeeSeoyun";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/LeeSeoyun.woff")
+      format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+/* 전체 초기화값 */
+*{box-sizing: border-box;}
+body,h1,h2,h3,p,ul{margin: 0; padding: 0;}
+li{list-style: none;}
+a{text-decoration: none; display: block;}
+/* BGM부분 */
+#bgm{
+    position: absolute;
+    width: 200px;
+    height: 20px;
+    right: 0;
+    top: 20px;
+}
+/* 헤더부분 */
+#header{
+    position: fixed;top:0;left: 0;
+    width: 20%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    min-width: 100px;
+}
+#header h1{
+    padding: 20% 0; color: #fff;
+    text-align: center;
+}
+
+/* 네비 부분 */
+#gnb ul li{
+    text-align: center;
+    line-height: 50px;
+}
+ul li a{
+     color: #fff;
+    font-size: 100%;
+    width: 100%;
+    height: 10%;
+    text-align: center;
+}
+ul li.on a{
+    background: #ff0; color: #000;
+    opacity: 0.2;
+    border-radius: 20px;
+}
+
+body{
+    font-family: "LeeSeoyun";
+    overflow: hidden;
+}
+.date{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #e0bef8;
+    display: flex;
+    justify-content: center;
+    margin-left: 15%;
+}
+body>section{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+section>h1{
+    width: 100%;
+    text-align: center;
+    font-size: 1.5vw;
+    transform: translateY(50%);
+}
+
+/* 배경 */
+body>section:nth-of-type(odd){
+    background-image: url(/img/구름.png);
+}
+body>section:nth-of-type(even){
+    background-image: url(/img/왕구름.png);
+}
+.photos{
+    width: 15%;
+    height: 85%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 15%;
+    cursor: pointer;
+}
+.J1photos{
+    background-color: #facbef;
+}
+.F2photos{
+    background-color: #fccaaf;
+}
+.M3photos{
+    background-color:#fbf7a8;
+}
+.A4photos{
+    background-color: #b9fb9f;
+}
+.M5photos{
+    background-color: #b5f2f9;
+}
+.J6photos{
+    background-color: #a5bff5;
+}
+.J7photos{
+    background-color: #bcb3f4;
+}
+.A8photos{
+    background-color: #f9a2c5;
+}
+.S9photos{
+    background-color: #faabb1;
+}
+.O10photos{
+    background-color: #c8c8c8;
+}
+.N11photos{
+    background-color: #aacedd;
+}
+.D12photos{
+    background-color: #74c074;
+}
+.photos>div{
+    background-repeat: no-repeat;
+    width: 90%;
+    height: 20%;
+    background-size: 100% 100%;
+    margin-top: 3%;
+    position: relative;
+}
+.photos>div:first-child{
+    margin-top: 8%;
+}
+/* 1월사진 */
+#J1image1{background-image: url(/img/1월/photo_1.jpg);}
+#J1image2{background-image: url(/img/1월/photo_2.jpg);}
+#J1image3{background-image: url(/img/1월/phto_3.jpg);}
+
+/* 2월사진 */
+#F2image1{background-image: url(/img/2월/photo_1.jpg);}
+#F2image2{background-image: url(/img/2월/photo_2.jpg);}
+#F2image3{background-image: url(/img/2월/photo_3.jpeg);}
+
+/* 3월사진 */
+#M3image1{background-image: url(/img/3월/photo_1.jpg);}
+#M3image2{background-image: url(/img/3월/photo_3.jpg);}
+#M3image3{background-image: url(/img/3월/photo_2.jpg);}
+
+/* 4월사진 */
+#A4image1{background-image: url(/img/4월/photo_1.jpg);}
+#A4image2{background-image: url(/img/4월/photo_2.jpg);}
+#A4image3{background-image: url(/img/4월/photo_3.jpg);}
+
+/* 5월사진 */
+#M5image1{background-image: url(/img/5월/photo_1.jpg);}
+#M5image2{background-image: url(/img/5월/photo_2.jpg);}
+#M5image3{background-image: url(/img/5월/photo_3.jpg);}
+
+/* 6월사진 */
+#J6image1{background-image: url(/img/6월/photo_1.jpg);}
+#J6image2{background-image: url(/img/6월/photo_2.jpg);}
+#J6image3{background-image: url(/img/6월/photo_3.jpg);}
+
+/* 7월사진 */
+#J7image1{background-image: url(/img/7월/photo_1.jpg);}
+#J7image2{background-image: url(/img/7월/photo_2.jpg.jpg);}
+#J7image3{background-image: url(/img/7월/photo_3.jpg.jpg);}
+
+/* 8월사진 */
+#A8image1{background-image: url(/img/8월/photo_1.jpg);}
+#A8image2{background-image: url(/img/8월/photo_2.jpeg);}
+#A8image3{background-image: url(/img/8월/photo_3.jpg);}
+
+/* 9월사진 */
+#S9image1{background-image: url(/img/9월/photo_1.jpg);}
+#S9image2{background-image: url(/img/9월/photo_2.jpg);}
+#S9image3{background-image: url(/img/9월/photo_3.jpg);}
+
+/* 10월사진 */
+#O10image1{background-image: url(/img/10월/photo_1.jpeg);}
+#O10image2{background-image: url(/img/10월/photo_2.jpg);}
+#O10image3{background-image: url(/img/10월/photo_3.jpg);}
+
+/* 11월사진 */
+#N11image1{background-image: url(/img/11월/photo_1.jpg);}
+#N11image2{background-image: url(/img/11월/photo_2.jpg);}
+#N11image3{background-image: url(/img/11월/photo_3.jpg);}
+
+/* 12월사진 */
+#D12image1{background-image: url(/img/12월/photo_1.jpg);}
+#D12image2{background-image: url(/img/12월/photo_2.jpg);}
+#D12image3{background-image: url(/img/12월/photo_3.jpg);}
+
+
+/* 사진설명 */
+span{
+    font-size: 1vw;
+}
+.photo_description{
+    color: white;
+    background-color:#8b8b8b;
+    padding: 0 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    transform: translate(-50%);
+    left: 50%;
+    opacity: 0;
+    width: 100%;
+    text-align: center;
+}
+/* 비디오 */
+iframe{
+    width: 100%;
+    height: 100%;
+}
+
+/* 푸터부분 */
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.5vw;
+    flex-wrap: wrap;
+    align-content: center;
+    text-align: center;
+    width: 100%;
+}
+.footer>p{
+    width: 100%;
+}
+.f-title{
+    color: white;
+    font-size: 5%;
+    font-weight: 900;
+}
+.f-date{
+    color: white;
+    font-size: 2%;
+    font-weight: 500;
+}
+
+/* 내비게이션 메뉴 */
+#menu{
+    position: fixed;
+    top: 27px;
+    left: 180px;
+    display: none;
+    z-index: 1;
+}
+#menu>img{
+    width: 25px;
+    height: 25px;
+}
+
+/* 모바일버전 600이하 */
+@media screen and (max-width:600px) {
+    .photos{
+        width:23%;
+        min-width: 150px;
+    }
+    #menu{
+        left:100px;
+    }
+    body>section{
+        background-size: cover;
+        background-position: center;
+    }
+}
+/* 모바일버전 450이하 */
+@media screen and (max-width:450px) {
+    .photos{
+        width: 35%;
+    }
+    
+}
